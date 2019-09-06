@@ -177,7 +177,6 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
     ],
 
     /*
@@ -230,6 +229,7 @@ return [
         'Carbon'=>'Carbon\carbon',
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'QrCode'=>SimpleSoftwareIO\QrCode\Facades\QrCode::class,
+        'JWTAuth'=>'Tymon\JWTAuth\Facades\JWTAuth',
     ],
 
 ];

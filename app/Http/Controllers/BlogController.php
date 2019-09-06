@@ -293,6 +293,6 @@ class BlogController extends Controller
     public function sendMail($type,$mailUser)
     {
         Mail::to($mailUser)->send(new Verification($type));
-        return redirect('/');
+         echo("check your email");
     }
 }
