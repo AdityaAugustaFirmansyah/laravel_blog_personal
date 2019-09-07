@@ -20,7 +20,7 @@ class Blog extends Model
         return $this->belongsTo('App\User');
     }
 
-    public function namas()
+    public function namas()                                                                                                                                                                                                                                                                                                                                                                                                                         
     {
         return $this->hasMany(Comentar::class,'id');
     }
