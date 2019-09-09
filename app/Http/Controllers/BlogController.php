@@ -6,6 +6,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Illuminate\Http\Request;
 use DB;
 use App\Quotation;
+use DataTables;
 use App\Blog;
 use App\Comentar;
 use Auth;
@@ -294,5 +295,11 @@ class BlogController extends Controller
     {
         Mail::to($mailUser)->send(new Verification($type));
          echo("check your email");
+    }
+
+    public function json()
+    {
+        $blog = Blog::where('user_id','=',Auth::user()->id)->get();
+        return DataTables::of($blog)->make(true);
     }
 }

@@ -115,3 +115,4 @@ Route::get('/form/add/tag',function()
 Route::post('/add/tag','BlogController@addTag');
 Route::get('/tag/delete/{id}','BlogController@deleteTag');
 Route::get('/mail/send/{type}/{userMail}','BlogController@sendMail');
+Route::get('/json','BlogController@json');

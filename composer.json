@@ -16,7 +16,8 @@
         "laravel/socialite": "^4.1",
         "laravel/tinker": "^1.0",
         "simplesoftwareio/simple-qrcode": "^2.0",
-        "tymon/jwt-auth": "^1.0.0-beta.3@dev"
+        "tymon/jwt-auth": "^1.0.0-beta.3@dev",
+        "yajra/laravel-datatables-oracle": "~8.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

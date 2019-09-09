@@ -177,6 +177,7 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
     ],
 
     /*
@@ -230,6 +231,7 @@ return [
         'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'QrCode'=>SimpleSoftwareIO\QrCode\Facades\QrCode::class,
         'JWTAuth'=>'Tymon\JWTAuth\Facades\JWTAuth',
+        'DataTables'=>Yajra\DataTables\Facades\DataTables::class,
     ],
 
 ];
